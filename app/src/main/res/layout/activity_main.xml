@@ -18,126 +18,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_view"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            card_view:cardBackgroundColor="@android:color/holo_green_light"
-            card_view:cardCornerRadius="4dp"
-            card_view:layout_constraintLeft_toLeftOf="parent"
-            card_view:layout_constraintRight_toRightOf="parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/treatmentListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="SAMHSA \nSubstance Abuse Mental Health Services Association"
-
-                    android:textColor="@android:color/black"
-                    card_view:layout_constraintLeft_toLeftOf="parent"
-                    card_view:layout_constraintRight_toRightOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:fontFamily="@font/open_sans_extrabold"
-                    android:text="http://www.samhsa.gov"
-                    android:textColor="@android:color/black"
-                    card_view:layout_constraintLeft_toLeftOf="@id/textView"
-                    card_view:layout_constraintTop_toBottomOf="@id/textView"
-
-                    />
-            </android.support.constraint.ConstraintLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_view2"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            card_view:cardBackgroundColor="@android:color/holo_green_light"
-            card_view:cardCornerRadius="4dp"
-            card_view:layout_constraintLeft_toLeftOf="parent"
-            card_view:layout_constraintRight_toRightOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@id/card_view">
-
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="Massachusetts Bureau of Substance Abuse Hotline"
-
-                    android:textColor="@android:color/black"
-                    card_view:layout_constraintLeft_toLeftOf="parent"
-                    card_view:layout_constraintRight_toRightOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:fontFamily="@font/open_sans_extrabold"
-                    android:text="http://www.helpline-online.com"
-                    android:textColor="@android:color/black"
-                    card_view:layout_constraintLeft_toLeftOf="@id/textView2"
-                    card_view:layout_constraintTop_toBottomOf="@id/textView2" />
-            </android.support.constraint.ConstraintLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_view3"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            card_view:cardBackgroundColor="@android:color/holo_green_light"
-            card_view:cardCornerRadius="4dp"
-            card_view:layout_constraintLeft_toLeftOf="parent"
-            card_view:layout_constraintRight_toRightOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@id/card_view2">
-
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="MOAR\nMass Organization of Addiction Recovery"
-
-                    android:textColor="@android:color/black"
-                    card_view:layout_constraintLeft_toLeftOf="parent"
-                    card_view:layout_constraintRight_toRightOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:fontFamily="@font/open_sans_extrabold"
-                    android:text="http://www.moar-recovery.org"
-                    android:textColor="@android:color/black"
-                    card_view:layout_constraintLeft_toLeftOf="@id/textView3"
-                    card_view:layout_constraintTop_toBottomOf="@id/textView3" />
-            </android.support.constraint.ConstraintLayout>
-
-        </android.support.v7.widget.CardView>
+        </android.support.v7.widget.RecyclerView>
 
     </android.support.constraint.ConstraintLayout>
 
@@ -166,5 +52,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:rippleColor="@android:color/transparent"
+        android:layout_margin="40dp"
+        android:id="@+id/pledge"
+        android:src="@drawable/hold"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
 </android.support.constraint.ConstraintLayout>
