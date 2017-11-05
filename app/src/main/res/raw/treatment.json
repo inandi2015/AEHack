@@ -1,0 +1,67 @@
+{
+  "For Treatment":
+  {
+    "SAMHSA (Substance Abuse Mental Health Services Association)": ["Web: www.samhsa.gov"],
+    "Massachusetts Bureau of Substance Abuse Hotline":["Web: www.helpline-online.com","Phone: 800-327-5050 tty-888-448-8321"],
+    "MOAR (Mass Organization of Addiction Recovery)":["Web: www.moar-recovery.org"]
+  }
+
+  "Support for Family and Friends":
+  {
+    "Learn To Cope":["Web: www.Learn2Cope.org","Phone: 508-801-3247"],
+
+    "Nasal Narcan Responder Training":["Phone: 800-327-5050"],
+
+    "AI-Anon/Alateen":["Web: ma-al-anon-alateen.org","Phone: 508-366-0556"],
+
+    "Alanon":["Web: al-anon.org","Phone: 888-425-2666"],
+
+    "Families Anonymous":["Web: familiesanonymous.org"],
+
+    "The Addict's Mom":["Web: addictsmom.com"],
+
+    "Drug Free":["Web: Drugfree.org"],
+
+    "Wicked Sober":["Web: wickedsober.com"]
+  },
+
+
+  "Inpatient Detox/Treatment":
+  {
+    "Lahey Health Behavioral Services Treatment Centers":
+    ["Web: www.nebhealth.org",
+      "Tewksbury at State Hospital: 978-259-7000",
+      "Danvers: 978-777-2121",
+      "Boston: 617-247-1001"],
+
+    "AdCare Hospital":
+    ["Worcester: 800-345-3552 or 8QQ-252-6465"],
+
+    "Community Healthlink Inc":["Worcester: 508-860-1200"],
+
+    "Institute for Health and Recovery":
+    ["Intake for multiple inpatient services for adolescents and families with children",
+      "Phone: 617-661-3991"],
+
+    "Spectrum Health Systems":
+    ["Westborough: 800-366-7732"],
+
+    "Dimock Detox":
+    ["Roxbury: 617-442-8800 x 1320"],
+
+    "SSTAR":
+    ["provides services for pregnant women.",
+      "Web: sstar.org",
+      "Fall River: 800-937-3610 or 508-324-7763"]
+  },
+
+
+  "Outpatient Detox/Treatment":
+  {
+    "CleanSlate Centers":["Tewksbury: 800-NEW-START"],
+    "Adcare Hospital": ["Worcester: 800-345-3552 or 800-252-6465"],
+    "Spectrum Health Systems": ["Phone: 800-464-9555"],
+    "Caritas NORCAP": ["Foxboro: 800-331-2900"],
+    "Veterans Center": ["Bedford: 781-687-2347", "urgentcare: 781-687-2654"]
+  }
+}

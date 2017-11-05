@@ -3,6 +3,7 @@ package com.richard.aehack;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -35,15 +36,19 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             RecyclerView rv = findViewById(R.id.testimonialList);
+            ConstraintLayout tl = findViewById(R.id.treatmentList);
             switch (item.getItemId()) {
                 case R.id.testimonial:
                     rv.setVisibility(View.VISIBLE);
+                    tl.setVisibility(View.GONE);
                     return true;
                 case R.id.treatment:
                     rv.setVisibility(View.GONE);
+                    tl.setVisibility(View.VISIBLE);
                     return true;
                 case R.id.resource:
                     rv.setVisibility(View.GONE);
+                    tl.setVisibility(View.VISIBLE);
                     return true;
             }
             return false;
@@ -58,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        ConstraintLayout tl = findViewById(R.id.treatmentList);
+
         String myJson=inputStreamToString(getResources().openRawResource(R.raw.testimonial));
 
         Type listType = new TypeToken<List<Testimonial>>() {}.getType();
@@ -69,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         rv.setLayoutManager(new LinearLayoutManager(this));
         rv.setItemAnimator(new DefaultItemAnimator());
 
+        rv.setVisibility(View.VISIBLE);
+        tl.setVisibility(View.GONE);
     }
 
     public String inputStreamToString(InputStream inputStream) {
